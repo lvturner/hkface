@@ -1,0 +1,45 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "lvturner@me.com",
+    "longName": "HKFace",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/very_high.png",
+                "name": "AQI_VERY_HIGH",
+                "type": "png"
+            },
+            {
+                "file": "images/serious.png",
+                "name": "AQI_SERIOUS",
+                "type": "png"
+            },
+            {
+                "file": "images/high.png",
+                "name": "AQI_HIGH",
+                "type": "png"
+            },
+            {
+                "file": "images/low.png",
+                "name": "AQI_LOW",
+                "type": "png"
+            },
+            {
+                "file": "images/moderate.png",
+                "name": "AQI_MODERATE",
+                "type": "png"
+            }
+        ]
+    },
+    "shortName": "HKFace",
+    "uuid": "21d35d90-656d-43de-827a-1918a2ee9d0e",
+    "versionCode": 1,
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}

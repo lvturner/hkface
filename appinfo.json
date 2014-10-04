@@ -1,9 +1,13 @@
 {
-    "appKeys": {},
+    "appKeys": {
+        "AQI": 0,
+        "TEMPERATURE": 0,
+        "WARNING": 0
+    },
     "capabilities": [
         ""
     ],
-    "companyName": "lvturner@me.com",
+    "companyName": "Lee Turner",
     "longName": "HKFace",
     "projectType": "native",
     "resources": {
@@ -40,6 +44,6 @@
     "versionCode": 1,
     "versionLabel": "1.0",
     "watchapp": {
-        "watchface": false
+        "watchface": true
     }
 }

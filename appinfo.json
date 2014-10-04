@@ -1,8 +1,8 @@
 {
     "appKeys": {
-        "AQI": 0,
-        "TEMPERATURE": 0,
-        "WARNING": 0
+        "AQI": 1,
+        "TEMPERATURE": 2,
+        "WARNING": 3
     },
     "capabilities": [
         ""

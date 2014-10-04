@@ -11,9 +11,8 @@ static GBitmap *s_res_aqi_moderate;
 static TextLayer *time_layer;
 static TextLayer *date_layer;
 static TextLayer *warning_layer;
-static TextLayer *hdiv;
 static TextLayer *temperature_layer;
-static BitmapLayer *s_bitmaplayer_1;
+static BitmapLayer *aqi_layer;
 
 static void initialise_ui(void) {
   s_window = window_create();
@@ -46,11 +45,6 @@ static void initialise_ui(void) {
   text_layer_set_font(warning_layer, s_res_gothic_18);
   layer_add_child(window_get_root_layer(s_window), (Layer *)warning_layer);
   
-  // hdiv
-  hdiv = text_layer_create(GRect(0, 131, 144, 1));
-  text_layer_set_text(hdiv, "Text layer");
-  layer_add_child(window_get_root_layer(s_window), (Layer *)hdiv);
-  
   // temperature_layer
   temperature_layer = text_layer_create(GRect(-1, 129, 59, 39));
   text_layer_set_text(temperature_layer, "28°");
@@ -58,11 +52,11 @@ static void initialise_ui(void) {
   text_layer_set_font(temperature_layer, s_res_bitham_30_black);
   layer_add_child(window_get_root_layer(s_window), (Layer *)temperature_layer);
   
-  // s_bitmaplayer_1
-  s_bitmaplayer_1 = bitmap_layer_create(GRect(56, 129, 93, 41));
-  bitmap_layer_set_bitmap(s_bitmaplayer_1, s_res_aqi_moderate);
-  bitmap_layer_set_background_color(s_bitmaplayer_1, GColorWhite);
-  layer_add_child(window_get_root_layer(s_window), (Layer *)s_bitmaplayer_1);
+  // aqi_layer
+  aqi_layer = bitmap_layer_create(GRect(56, 129, 93, 41));
+  bitmap_layer_set_bitmap(aqi_layer, s_res_aqi_moderate);
+  bitmap_layer_set_background_color(aqi_layer, GColorWhite);
+  layer_add_child(window_get_root_layer(s_window), (Layer *)aqi_layer);
 }
 
 static void destroy_ui(void) {
@@ -70,9 +64,8 @@ static void destroy_ui(void) {
   text_layer_destroy(time_layer);
   text_layer_destroy(date_layer);
   text_layer_destroy(warning_layer);
-  text_layer_destroy(hdiv);
   text_layer_destroy(temperature_layer);
-  bitmap_layer_destroy(s_bitmaplayer_1);
+  bitmap_layer_destroy(aqi_layer);
   gbitmap_destroy(s_res_aqi_moderate);
 }
 // END AUTO-GENERATED UI CODE

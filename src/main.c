@@ -66,7 +66,7 @@ static void ask_for_update() {
 }
 
 static void tap_handler(AccelAxisType axis, int32_t direction) {
-    set_aqi("low");
+    set_aqi("");
     set_temperature("");
     set_warning("\n\tUPDATING...");
 
